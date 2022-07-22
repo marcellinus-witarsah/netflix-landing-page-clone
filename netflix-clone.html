@@ -75,11 +75,11 @@
             <div class="hero-card__text">        
                 <h1> Unlimited movies, TV shows, and more.</h1>
                 <h2> Watch anywhere. Cancel anytime.</h2>
-                <form class="email-form" action="..." method="POST">
+                <form class="email-form" method="POST" onsubmit="event.preventDefault()">
                     <h3 class="email-form__title"> Ready to watch? Enter your email to create or restart your membership.</h3>
                     <div class="email-form-lockup">
-                        <input class="email-form__input" type="email" name="email" id="email" placeholder="Email address">
-                        <input class= "btn btn-submit" type="submit" value="Get Started >">
+                        <input class="email-form__input" type="email" name="email" id="type-email" placeholder="Email address">
+                        <input class= "btn btn-submit" type="submit" value="Get Started >" id="submit-email">
                     </div>
                 </form>
             </div>
