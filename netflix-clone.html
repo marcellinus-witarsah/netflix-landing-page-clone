@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png" type="image/x-icon">
+    <link rel="stylesheet" href="netflix-clone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header class="header-wrapper">
+        <div class="header-container">
+            <!-- div Netflix logo -->
+
+            <div class="netflix-logo-wrapper">
+                <img
+                class="netflix-logo" 
+                src="./resources/images/netflix-logo.png"
+                alt="netflix-logo"
+                >
+            </div>
+            
+            <div class="netflix-menu-wrapper">
+                <ul>
+                    <li class="netflix-menu" id="netflix-menu-1">
+                        About Netflix
+                        <ul class="netflix-dropdown-menu dropdown_menu--animated dropdown-animation">
+                            <li>Profile</li>
+                            <li>History</li>
+                            <li>Products</li>
+                            <li>Locations</li>
+                        </ul>
+                    </li>
+                    <li class="netflix-menu" id="netflix-menu-2">
+                        Account
+                        <ul class="netflix-dropdown-menu dropdown_menu--animated dropdown-animation">
+                            <li>Account Settings</li>
+                            <li>Memberships</li>
+                            <li>Billing and Pricing</li>
+                            <li>Privacy Settings</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- div Select Language  -->
+            <div class="select-language-wrapper">
+                <select
+                class = "select-language" 
+                name="select-language">
+                    <option value="Indonesia">Bahasa Indonesia</option>
+                    <option value="English">English</option>
+                </select>
+            </div>
+        
+        
+            <!-- button Sign in -->
+            <div class="btn-sign-in-wrapper">
+                <a href="./netflix-clone.html">
+                    <button class="btn btn-sign-in">Sign In</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="cards">
+        <div class="hero-card">
+            <div class="layer-gradient-transparent-top"></div>
+            <div class="hero-card__background"></div>
+            <div class="hero-card__text">        
+                <h1> Unlimited movies, TV shows, and more.</h1>
+                <h2> Watch anywhere. Cancel anytime.</h2>
+                <form class="email-form" action="..." method="POST">
+                    <h3 class="email-form__title"> Ready to watch? Enter your email to create or restart your membership.</h3>
+                    <div class="email-form-lockup">
+                        <input class="email-form__input" type="email" name="email" id="email" placeholder="Email address">
+                        <input class= "btn btn-submit" type="submit" value="Get Started >">
+                    </div>
+                </form>
+            </div>
+            <div class="layer-gradient-transparent-bot"></div>
+        </div>
+
+        <div class="netflix-card-wrapper hero-card">
+            <div class="netflix-enjoy-card">
+                <div class="netflix-enjoy-card__text">
+                    <h1>Enjoy on your TV.</h1>
+                    <h2>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.<h2>
+                </div>
+                <div class="netflix-card__picture">
+                    <img src="./resources/images/tv.png"
+                        alt="netflix-tv-png">
+                    <div class="netflix-tv-animation">
+                        <video autoplay="" playsinline="" muted="" loop="">
+                            <source src="./resources/videos/video-tv-0819.m4v" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="netflix-card-wrapper hero-card">
+            <div class="netflix-download-card">
+                <div class="netflix-card__picture">
+                    <img src="./resources/images/mobile-0819.jpg"
+                        alt="netflix-mobile-png">
+                    <div class="netflix-phone-animation">
+                        <!-- picture -->
+                        <div class="poster">
+                            <img alt="" src="./resources/images/boxshot.png">
+                        </div>
+                        <!-- text -->
+                        <div class="text">
+                            <div class="text-wrapper">
+                                <div>Stranger Things</div>
+                                <div style="color:#0071EB">Downloading...</div>
+                            </div>
+                        </div>
+                        
+                        <!-- loading -->
+                        <div class="loading">
+                            <img src="./resources/gif/download-icon.gif" alt="loading">
+                        </div>
+                        
+                    </div>
+                </div>   
+                <div class="netflix-download-card__text">
+                    <h1> Download your shows to watch offline. </h1>
+                    <h2> Save your favorites easily and always have something to watch. <h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="netflix-card-wrapper hero-card">
+            <div class="netflix-watch-card">
+                <div class="netflix-watch-card__text">
+                    <h1>Watch everywhere.</h1>
+                    <h2>Streaming film dan acara TV tak terbatas di ponsel, tablet, laptop, dan TV-mu.</h2>
+                </div>
+                <div class="netflix-card__picture">
+                    <img src="./resources/images/device-pile-id.png"
+                        alt="netflix-tv-png">
+
+                    <div class="netflix-monitor-animation">
+                        <video class="our-story-card-video" autoplay="" playsinline="" muted="" loop="">
+                            <source src="./resources/videos/video-devices-id.m4v" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="netflix-card-wrapper hero-card">
+            <div class="netflix-kids-card">
+                <div class="netflix-card__picture">
+                    <img src="./resources/images/kids.png"
+                        alt="netflix-kids-png">
+                </div>
+
+                <div class="netflix-kids-card__text">
+                    <h1> Create profiles for kids. </h1>
+                    <h2> Send kids on adventures with their favorite characters in a space made just for them—free with your membership. <p>
+                </div>
+            </div>
+        </div>
+
+        <div class="netflix-card-wrapper hero-card">
+            <div class="netflix-faq-card">
+                <h1>Frequently Asked Questions</h1>
+                <ul class="faq-list">
+                    <li class="faq-list__item">
+                        <button id="question-1" onclick="revealAnswer(this)">
+                            What is Netflix?
+                            <span class="fa fa-plus"></span>
+                        </button>
+                        <div class="faq-list__answer" id= "answer-1">
+                            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                            <br>
+                            <br>
+                            You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                        </div>
+                    </li>
+                    <li class="faq-list__item">
+                        <button id="question-2" onclick="revealAnswer(this)">
+                            How much does Netflix cost?
+                            <span class="fa fa-plus"></span>
+                        </button>
+                        <div class="faq-list__answer" id="answer-2">
+                            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from IDR54,000 to IDR186,000 a month. No extra costs, no contracts.
+                        </div>
+                    </li>
+                    <li class="faq-list__item">
+                        <button id="question-3" onclick="revealAnswer(this)">
+                            Where can I watch?
+                            <span class="fa fa-plus"></span>
+                        </button>
+                        <div class="faq-list__answer" id="answer-3">
+                            Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                            <br>
+                            <br>
+                            You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                        </div>
+                    </li>
+                    <li class="faq-list__item" >
+                        <button id="question-4" onclick="revealAnswer(this)">
+                            How do I cancel?
+                            <span class="fa fa-plus"></span>
+                        </button>
+                        <div class="faq-list__answer" id="answer-4">
+                            Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                        </div>
+                    </li>
+                    <li class="faq-list__item">
+                        <button id="question-5" onclick="revealAnswer(this)"> 
+                            What can I watch on Netflix?
+                            <span class="fa fa-plus"></span>
+                        </button>
+                        <div class="faq-list__answer" id="answer-5">
+                            Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                        </div>
+                    </li>
+                    <li class="faq-list__item">
+                        <button id="question-6" onclick="revealAnswer(this)"> 
+                            Is Netflix good for kids?
+                            <span class="fa fa-plus"></span>
+                        </button>
+                        <div class="faq-list__answer" id="answer-6">
+                            The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.
+                            <br>
+                            <br>
+                            Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+                        </div>
+                    </li>
+                </ul>
+                
+                <h3 class="email-form__title"> Your Question is not up there? Please just let us know by filling this form.</h3>
+                <form class="question-form" id="question-form">
+                    <div class="question-form-lockup">
+                        <input class="name-form__input" type="name" name="name" id="name" placeholder="Name">
+                        <input class="email-form__input" type="email" name="email" id="email" placeholder="Email Address">
+                        <textarea class="question-form__input" name="question" id="question" placeholder="Question"></textarea>
+                        <input class="btn btn-submit" type="submit" value="Submit" id='submit-question'>
+                    </div>
+                </form>
+                <div class="question-container" id="question-container">
+                    <!-- comment from user -->
+                    
+                </div>
+            </div>
+        </div>
+
+        <footer class="netflix-card-wrapper hero-card">
+            <div class="netflix-footer-card">
+                <div class="netflix-footer-card__title">
+                    <p>Questions? Call 007-803-321-2130</p>
+                </div>
+    
+                <div class="netflix-footer-card__content">
+                    <a href="">FAQ</a>
+                    <a href="">Help Center</a>
+                    <a href="">Account</a>
+                    <a href="">Media Center</a>
+                    <a href="">Investor Relations</a>
+                    <a href="">Jobs</a>
+                    <a href="">Ways to Watch</a>
+                    <a href="">Terms of Use</a>
+                    <a href="">Privacy</a>
+                    <a href="">Cookie Preferences</a>
+                    <a href="">Corporate Information</a>
+                    <a href="">Contact Us</a>
+                    <a href="">Speed Test</a>
+                    <a href="">Legal Notices</a>
+                    <a href="">Only on Netflix</a>
+                </div>
+    
+               
+                <div class="select-language-wrapper">
+                    <div class="select-language-wrapper-footer">
+                        <select
+                        class = "select-language-footer"
+                        name="select-language">
+                            <option value="Indonesia">Bahasa Indonesia</option>
+                            <option value="English">English</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <p class="footer-country">
+                    Netflix Indonesia
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="./netflix-clone.js"></script>
+</body>
+</html>
